@@ -28,7 +28,7 @@ def static_data_metrics(mongo: MongoConnection):
 
 
 def stocks_live_metrics(mongo: MongoConnection):
-    active_stocks = mongo.get_by_filter_all(collection=mongo.get_collection(f'stocks_{BUY}'),filters=STOCK_BUY_PROCCESS_FILTER,projection=STOCKS_BUY_PROCESS_MONGO_PROJECTION)
+    active_stocks = list(mongo.get_by_filter_all(collection=mongo.get_collection(f'stocks_{BUY}'),filters=STOCK_BUY_PROCCESS_FILTER,projection=STOCKS_BUY_PROCESS_MONGO_PROJECTION))
     for active_stock in active_stocks:
         active_stock.pop("_id", None)
         prometheus_set_gauge(gauge_to_set=active_stock_quage, data=active_stock, target_value=active_stock[START_PRICE])
@@ -36,9 +36,10 @@ def stocks_live_metrics(mongo: MongoConnection):
         prometheus_set_gauge(gauge_to_set=active_stock_quantity_quage, data=active_stock, target_value=active_stock[AVAILABLE_QUANTITY])
 
     while True:
-       time.sleep(100)
+       time.sleep(60)
        for active_stock_symbol in active_stocks:
             price_of_stock = track_stock(active_stock_symbol["symbol"])['price']
+            print(price_of_stock)
             prometheus_set_gauge(gauge_to_set=current_stock_price, data=active_stock, target_value=price_of_stock)
 
 

@@ -1,5 +1,5 @@
 MONGO:
-  CONNECTION_STRING : "mongodb+srv://ozserper1563:Ozsr15631563@cluster0.sg4iw8a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  CONNECTION_STRING : "#########"
   DATABASE_NAME : "ozile-stocks"
   COLLECTIONS:
     SELL_COLLECTION: "stocks_sells"
