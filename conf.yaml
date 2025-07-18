@@ -1,0 +1,14 @@
+MONGO:
+  CONNECTION_STRING : 
+  DATABASE_NAME : "ozile-stocks"
+  COLLECTIONS:
+    SELL_COLLECTION: "stocks_sells"
+    BUY_COLLECTION: "stocks_buys"
+    VALUE_INVESTED: "stocks_all_value"
+JINJA_FILES_STRACTIRE:
+  BUY: "stock_buy_template.j2"
+  SELL: "stock_sell_template.j2"
+  INVEST: "stock_invest_template.j2"
+  SELL_FILTER: "stock_buy_template_for_filter.j2"
+TAXES:
+  TAX_PER_TRANSACTION: 8

@@ -1,0 +1,71 @@
+{
+    "9b679070188b06cbc9cceb4c4af6242e9524efabee3c41f2eba8fb84ef3befaa": {
+        "symbol": "CHWY",
+        "quantity": 120.0,
+        "start_price": 38.29,
+        "date": "15/07/2025",
+        "action": "BUY"
+    },
+    "9bce46becc7d0dd13c1277354756f2ea181a924c7e05c612f47d960060588aa8": {
+        "symbol": "TGTX",
+        "quantity": 119.0,
+        "end_price": 38.42,
+        "date": "14/07/2025",
+        "action": "SELL"
+    },
+    "3ce8e7bf58d90ec4a4b9a4f24e5a8c68e638d522ef19237207d54c4245f50798": {
+        "symbol": "TGTX",
+        "quantity": 119.0,
+        "start_price": 36.73,
+        "date": "01/07/2025",
+        "action": "BUY"
+    },
+    "dd05062b5bc05aacdfbac264f1e9b4c454ee03f18c90a322651c60d4b0cff04f": {
+        "symbol": "ACHR",
+        "quantity": 390.0,
+        "end_price": 11.0,
+        "date": "30/06/2025",
+        "action": "SELL"
+    },
+    "54aa3d5436c83170138fe6be1dd82c9fac46f7f9034eba413f4911f0c9141f42": {
+        "symbol": "ACHR",
+        "quantity": 390.0,
+        "start_price": 10.36,
+        "date": "16/06/2025",
+        "action": "BUY"
+    },
+    "ab4512fdb817f3b05021b7a44269ef4d78f416d56980bfef42fded2323bc3939": {
+        "symbol": "UBER",
+        "quantity": 15.0,
+        "end_price": 83.97,
+        "date": "13/06/2025",
+        "action": "SELL"
+    },
+    "3d626a49be0d4d6dde9ce9662c50f597595d6f9023b6ffd251f41941d0e71ed2": {
+        "symbol": "GOOG",
+        "quantity": 16.0,
+        "end_price": 180.47,
+        "date": "11/06/2025",
+        "action": "SELL"
+    },
+    "71c78d268c4c20b3710e061b521cf7757dba39b9b1c8aa1045f87292cb6bfa63": {
+        "symbol": "UBER",
+        "quantity": 15.0,
+        "start_price": 83.83,
+        "date": "05/06/2025",
+        "action": "BUY"
+    },
+    "afcca4367a18c4323d4f957ccd098eb84ebee57f7624ba49b020152f65b10dfd": {
+        "dollars": 4208.16,
+        "shekels": 15000,
+        "action": "INVEST",
+        "date": "28/05/2025"
+    },
+    "09e9006533da59da4e16225bd7cc8b62464f4a2835423b294aca911e3557cc55": {
+        "symbol": "GOOG",
+        "quantity": 16.0,
+        "start_price": 173.68,
+        "date": "27/05/2025",
+        "action": "BUY"
+    }
+}
