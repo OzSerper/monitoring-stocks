@@ -1,5 +1,5 @@
 MONGO:
-  CONNECTION_STRING : "######3"
+  CONNECTION_STRING : "mongodb+srv://ozserper1563:Ozsr15631563@cluster0.sg4iw8a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   DATABASE_NAME : "ozile-stocks"
   COLLECTIONS:
     SELL_COLLECTION: "stocks_sells"
@@ -12,3 +12,5 @@ JINJA_FILES_STRACTIRE:
   SELL_FILTER: "stock_buy_template_for_filter.j2"
 TAXES:
   TAX_PER_TRANSACTION: 8
+RATES:
+  API_KEY_FOREX_RATE : "85105ccdab38e7ea320c883cc1382de2"

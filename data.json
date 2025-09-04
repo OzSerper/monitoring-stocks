@@ -1,71 +1,492 @@
 {
-    "9b679070188b06cbc9cceb4c4af6242e9524efabee3c41f2eba8fb84ef3befaa": {
-        "symbol": "CHWY",
-        "quantity": 120.0,
-        "start_price": 38.29,
-        "date": "15/07/2025",
+    "b39df6443a335c2eb4a802542befbbfbd1e3d5bc0e969cfccdb0089bd2d5f895": {
+        "dollars": 2297.28,
+        "shekels": 8385.301711349488,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "98a5b314e49822bba71d29db743b19d01b51f59442da5e9a95dfb42a7e30702f": {
+        "symbol": "META",
+        "quantity": 4.0,
+        "start_price": 574.32,
+        "date": "29/11/2024",
         "action": "BUY"
     },
-    "9bce46becc7d0dd13c1277354756f2ea181a924c7e05c612f47d960060588aa8": {
-        "symbol": "TGTX",
-        "quantity": 119.0,
-        "end_price": 38.42,
-        "date": "14/07/2025",
+    "7def0264f0b810dc33c2bc56fbef9dbca05e6cf5bb15a6323e87b7e77f3101bd": {
+        "dollars": 3269.76,
+        "shekels": 11934.950952301026,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "de52914eac89dc20ec681a3f369a1c38f8732bceeb2ea4051c712ac9075833b6": {
+        "symbol": "AVGO",
+        "quantity": 6.0,
+        "start_price": 162.08,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "a72fb2824c96855fae4ab4998121ebc6a1d247b20b10edca0930e169bd1840d3": {
+        "dollars": 5635.0599999999995,
+        "shekels": 20568.532465157507,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "140808dedc1a6f29639248af25359238ebc79fa23156390fa550cd72f9ff34e9": {
+        "symbol": "GOOGL",
+        "quantity": 14.0,
+        "start_price": 168.95,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "0efea7388319c3ffdb3dc0e1a4c990b147b94cb43d499c9fb7ee4c41d234d5e5": {
+        "dollars": 7573.66,
+        "shekels": 27644.616311106678,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "dba11407f243da5ec4e5d65022e7ae2aa643754e62cfb499ac9f4b7ff703f6f4": {
+        "symbol": "SOXX",
+        "quantity": 9.0,
+        "start_price": 215.4,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "cf4344d90830f811ca5125320c17c0e658d12ca7401ff0fc21db7047644c43d0": {
+        "dollars": 9544.39,
+        "shekels": 34837.97786982298,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "4a05e17271186d9e0f934b92e277f94234041bfc4081f1137e8c13884d4c3766": {
+        "symbol": "WDC",
+        "quantity": 27.0,
+        "start_price": 72.99,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "58752831bb5985e17aff5ef854d523fd3a27b2a8885f675fa1db7abdc117dbf6": {
+        "dollars": 11415.349999999999,
+        "shekels": 41667.1689522624,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "fe56c3acdfacee2f847b37d472636029ac999fbb706e1dbe57330ca2f5718443": {
+        "symbol": "UBER",
+        "quantity": 26.0,
+        "start_price": 71.96,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "1786ebdc03c9fe049a8c7c64381e0441a7cff23885287df0360c3cb91505342d": {
+        "dollars": 12492.8,
+        "shekels": 45599.96918945312,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "3887d6a8b9a849dcba91fe67e82c917dae9b964d1c316af0798326f0b7e7dc16": {
+        "symbol": "MU",
+        "quantity": 11.0,
+        "start_price": 97.95,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "0077dc90c9d80625a0df2c80f1cb2d3affdb016a1a919a7b83ebf6b6bf8fdcee": {
+        "dollars": 14571.699999999999,
+        "shekels": 53188.16206438541,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "d82293688eb6eba21dfb5583662e4cd37846587ea7e76b635865c2a367f6147d": {
+        "symbol": "AMZN",
+        "quantity": 10.0,
+        "start_price": 207.89,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "961ab0362a038076f5dac77caf1ca819a6c77008ed4808aa0c3f394fafe18437": {
+        "dollars": 17535.92,
+        "shekels": 64007.86146490097,
+        "action": "INVEST",
+        "date": "29/11/2024"
+    },
+    "910a6525ad1f273a54a7efecbbceeed5c908f0ab20a3ed1f4927df93273c066a": {
+        "symbol": "MSFT",
+        "quantity": 7.0,
+        "start_price": 423.46,
+        "date": "29/11/2024",
+        "action": "BUY"
+    },
+    "ff78d7467b078c1c8f47cfae3e8a459f52611912c99edfcdc82452171dba3b08": {
+        "symbol": "DELL",
+        "quantity": 11.0,
+        "start_price": 127.25,
+        "date": "05/12/2024",
+        "action": "BUY"
+    },
+    "e2e307bb13edb10206f8f9e426b48c721de0ebbd5cbdfa416d9f68ef450f02da": {
+        "symbol": "AVGO",
+        "quantity": 7.0,
+        "start_price": 170.72,
+        "date": "05/12/2024",
+        "action": "BUY"
+    },
+    "ec0f5acd35a7d5677db18816b22029d94eed2dfb6afa5de9050e8c2f8e76ae99": {
+        "symbol": "AMZN",
+        "quantity": 10.0,
+        "start_price": 217.69,
+        "date": "05/12/2024",
+        "action": "BUY"
+    },
+    "b97a24d42be39a55bc553b6928cb195f615223cadb5271961c1d476bbac69a58": {
+        "symbol": "DELL",
+        "quantity": 11.0,
+        "end_price": 123.0,
+        "date": "09/12/2024",
         "action": "SELL"
     },
-    "3ce8e7bf58d90ec4a4b9a4f24e5a8c68e638d522ef19237207d54c4245f50798": {
-        "symbol": "TGTX",
-        "quantity": 119.0,
-        "start_price": 36.73,
-        "date": "01/07/2025",
+    "b6b7035b0248a4dc0c119418598a09b5421336662f09b6cba8f9618270142a2f": {
+        "dollars": 38454.67,
+        "shekels": 139007.86146490095,
+        "action": "INVEST",
+        "date": "09/12/2024"
+    },
+    "19fd86a655e5513bd931514c41c31ff9f4a13949da64ccc781a033f2e4cc7d36": {
+        "dollars": 44033.0,
+        "shekels": 159007.86146490095,
+        "action": "INVEST",
+        "date": "09/12/2024"
+    },
+    "45484240792914b88571e7d09c8d5c86216798d8d6194ba24ee97ddf5cae8241": {
+        "symbol": "NVDA",
+        "quantity": 37.0,
+        "start_price": 135.84,
+        "date": "10/12/2024",
         "action": "BUY"
     },
-    "dd05062b5bc05aacdfbac264f1e9b4c454ee03f18c90a322651c60d4b0cff04f": {
-        "symbol": "ACHR",
-        "quantity": 390.0,
-        "end_price": 11.0,
+    "a57dfd39b272ece2396b0a1f4d291e2d4abd7bbf6efbd8116993d9b315a94f6d": {
+        "symbol": "UBER",
+        "quantity": 26.0,
+        "end_price": 60.72,
+        "date": "11/12/2024",
+        "action": "SELL"
+    },
+    "059299bea68a3a43e0655baf5d565f1ccae3a9545badf01583629710d91f0df9": {
+        "symbol": "IWM",
+        "quantity": 32.0,
+        "start_price": 238.47,
+        "date": "11/12/2024",
+        "action": "BUY"
+    },
+    "de23c676e62c0e49c2028db2c781fa50b9bc544a36f58ca8436b56a39de54c3b": {
+        "symbol": "AVGO",
+        "quantity": 13.0,
+        "end_price": 237.54,
+        "date": "16/12/2024",
+        "action": "SELL"
+    },
+    "dd504420a969fc6a0943ebaf14a26d230584a286df1d2636da4139c6a52737d2": {
+        "symbol": "MNDY",
+        "quantity": 11.0,
+        "start_price": 261.99,
+        "date": "17/12/2024",
+        "action": "BUY"
+    },
+    "6b5e4a88a83e2ea2c2f07e5298ee150c6a4c3aacfed520ae3ea45ec304ca5754": {
+        "symbol": "COIN",
+        "quantity": 10.0,
+        "start_price": 314.75,
+        "date": "17/12/2024",
+        "action": "BUY"
+    },
+    "d3dbf1ded262e04d3c11c017f6c6595c9a8d332ec86bb110728e93934158f588": {
+        "symbol": "NVDA",
+        "quantity": 24.0,
+        "start_price": 131.42,
+        "date": "17/12/2024",
+        "action": "BUY"
+    },
+    "00f77a3ffd000726a0461a7f1533f045d6c60bf7e1a8f54ac981d67792510902": {
+        "symbol": "FIS",
+        "quantity": 49.0,
+        "start_price": 83.17,
+        "date": "18/12/2024",
+        "action": "BUY"
+    },
+    "4abeecdaa346a0fc0597f1e32cdfdd32c6e79f06257feed022f4653ca57c5391": {
+        "symbol": "MNDY",
+        "quantity": 11.0,
+        "end_price": 242.3,
+        "date": "18/12/2024",
+        "action": "SELL"
+    },
+    "b6221ecc8a4f22db765136184e51a9b9e485337425448850084a2ffb53a18b4a": {
+        "symbol": "BTC",
+        "quantity": 60.0,
+        "start_price": 46.08,
+        "date": "18/12/2024",
+        "action": "BUY"
+    },
+    "7ed637a1b41932d9636ce4c28238d14f628b786901421127a8b5a8c50ef97efa": {
+        "symbol": "ETH",
+        "quantity": 40.0,
+        "start_price": 36.34,
+        "date": "18/12/2024",
+        "action": "BUY"
+    },
+    "170eadd6ad91ff2c62d6a047f6b1a30c9698c1802310315ca823b5c2069de3b3": {
+        "symbol": "WDC",
+        "quantity": 27.0,
+        "end_price": 61.19,
+        "date": "24/12/2024",
+        "action": "SELL"
+    },
+    "db6b69569ec9b17c2aada7d92da37fb517eab392e830bfaf37c445059117db84": {
+        "symbol": "MU",
+        "quantity": 11.0,
+        "end_price": 89.09,
+        "date": "24/12/2024",
+        "action": "SELL"
+    },
+    "14a4e9541a3651a304f897d2de8ef22ef7498b91056f949e6a77e5c0edcc2cfe": {
+        "symbol": "MSTR",
+        "quantity": 7.0,
+        "start_price": 355.0,
+        "date": "24/12/2024",
+        "action": "BUY"
+    },
+    "0c50d235da32071c964159cd51b660eb68619f03dcd472503fe76469c2fe948b": {
+        "symbol": "FIS",
+        "quantity": 49.0,
+        "end_price": 76.96,
+        "date": "13/01/2025",
+        "action": "SELL"
+    },
+    "acc497e46c4c788e553a1da568f71f0a6e40df0d1d5017123c3515b833a118ec": {
+        "symbol": "NVDA",
+        "quantity": 29.0,
+        "start_price": 130.9,
+        "date": "13/01/2025",
+        "action": "BUY"
+    },
+    "0220b192d6e3f4fcfd903ae8e008b07adb113dfb678716045bc6040a42a60016": {
+        "symbol": "PANW",
+        "quantity": 25.0,
+        "start_price": 182.23,
+        "date": "21/01/2025",
+        "action": "BUY"
+    },
+    "9e43a4dd41d95d0a38c187e16d05308b96d45f8d94736d5bb37669302addbf02": {
+        "symbol": "NVDA",
+        "quantity": 31.0,
+        "start_price": 138.58,
+        "date": "21/01/2025",
+        "action": "BUY"
+    },
+    "c05a8691d1ac0d2161843b874049375c65baa9ddc2408b64884f7cbd824871f8": {
+        "dollars": 52622.5,
+        "shekels": 190007.86146490095,
+        "action": "INVEST",
+        "date": "21/01/2025"
+    },
+    "43cff198de3a55dec28b7e595e0311f26baf4d10d59bb49b5be6829ee30680be": {
+        "dollars": 52628.83,
+        "shekels": 190007.86146490095,
+        "action": "INVEST",
+        "date": "22/01/2025"
+    },
+    "52f6d2080d0eb3981d6207b08c5563883a5e503e81023e9bb704c81f4121ed7f": {
+        "symbol": "META",
+        "quantity": 4.0,
+        "end_price": 706.26,
+        "date": "30/01/2025",
+        "action": "SELL"
+    },
+    "5ecd9db396eabb68f5918e50f255e8a708438ba51dea7e24092272979010a2f5": {
+        "symbol": "MSFT",
+        "quantity": 6.0,
+        "start_price": 420.95,
+        "date": "30/01/2025",
+        "action": "BUY"
+    },
+    "8b81e254536d35a731dc4d74a4583ea97e2733fb99cccae054ad49d111c95643": {
+        "symbol": "NVDA",
+        "quantity": 2.0,
+        "start_price": 118.48,
+        "date": "04/02/2025",
+        "action": "BUY"
+    },
+    "baaae5541567ecd4651c890ba0125a1bf7d92c9820467ab69f1b3d4d69007615": {
+        "symbol": "TSLA",
+        "quantity": 5.0,
+        "start_price": 375.3,
+        "date": "07/02/2025",
+        "action": "BUY"
+    },
+    "ba4395089974fd65baad004cad0b0eb57e55896dd76e333e5f75daf2b2ee489b": {
+        "symbol": "SOXX",
+        "quantity": 9.0,
+        "end_price": 220.88,
+        "date": "07/02/2025",
+        "action": "SELL"
+    },
+    "6fc47c0d39aa2396848cb72dd18aaa012e4d2ad3d790a521f56dc93acc2faf92": {
+        "symbol": "NVDA",
+        "quantity": 123.0,
+        "end_price": 141.31,
+        "date": "18/02/2025",
+        "action": "SELL"
+    },
+    "becc86501e9fb5d8a457d17be40e3690aa0d328a1a860b342c374e3566ca82b4": {
+        "symbol": "TSLA",
+        "quantity": 5.0,
+        "start_price": 359.44,
+        "date": "19/02/2025",
+        "action": "BUY"
+    },
+    "52b6080c5310d00c1aaa6428dc536f9d0a1bfbdb522df546537399f0eec779ac": {
+        "symbol": "COIN",
+        "quantity": 6.0,
+        "start_price": 262.54,
+        "date": "19/02/2025",
+        "action": "BUY"
+    },
+    "ec5aa2e3bf18f431f8e0f25e782a836556e7936d32d1caf707ffce28a6368085": {
+        "symbol": "BTC",
+        "quantity": 59.0,
+        "start_price": 42.6,
+        "date": "19/02/2025",
+        "action": "BUY"
+    },
+    "b8e67684c99f8a41e15b0e7d89aed6ddd77b5ab6cb9203413e597a4134f65794": {
+        "symbol": "IWM",
+        "quantity": 32.0,
+        "end_price": 226.91,
+        "date": "19/02/2025",
+        "action": "SELL"
+    },
+    "169ceec2fa10da377fa83a4cbdf74230f14e36620f66c29b9bf5a1e85f33ce17": {
+        "symbol": "AMZN",
+        "quantity": 32.0,
+        "start_price": 225.96,
+        "date": "19/02/2025",
+        "action": "BUY"
+    },
+    "2ba363f54ce1f789d25244452f877f9f0fdd7992f36be4d67df64011ad0ef3f5": {
+        "symbol": "ANET",
+        "quantity": 37.0,
+        "start_price": 104.86,
+        "date": "19/02/2025",
+        "action": "BUY"
+    },
+    "9d55f2adf1fb513349f356d92dc4fd9dfb88dd7dc78d48c9782a37e12a668235": {
+        "symbol": "ANET",
+        "quantity": 70.0,
+        "start_price": 102.72,
+        "date": "19/02/2025",
+        "action": "BUY"
+    },
+    "9e224251043aac361b20c3177b7087707b40c7afbe4210c8ef5ff72ef6c302e9": {
+        "symbol": "VST",
+        "quantity": 37.0,
+        "start_price": 148.39,
+        "date": "27/02/2025",
+        "action": "BUY"
+    },
+    "571b749b9bec053000b277231b78da866d556ffe74a59cf33a10040ad3deae67": {
+        "symbol": "MSFT",
+        "quantity": 13.0,
+        "end_price": 402.29,
+        "date": "27/02/2025",
+        "action": "SELL"
+    },
+    "f372400f64576b5e9ad80823102e34725d25e8deb0cb9a640104c387f1e68132": {
+        "symbol": "META",
+        "quantity": 10.0,
+        "start_price": 579.27,
+        "date": "18/03/2025",
+        "action": "BUY"
+    },
+    "91986b62c8334ead04151690253e2b97db4c18d7b45ce60aed6400082099da85": {
+        "symbol": "IGV",
+        "quantity": 28.0,
+        "start_price": 91.13,
+        "date": "18/03/2025",
+        "action": "BUY"
+    },
+    "e6262018e276d451f67030ab64be001eaf796ad296de721ff19523f0bc20f34f": {
+        "dollars": 60731.41,
+        "shekels": 219707.86146490095,
+        "action": "INVEST",
+        "date": "18/03/2025"
+    },
+    "0ceb5d2251ddbbc9a2e816784f3f35c56e1c33b7922a8cf03ee63ec6de982569": {
+        "symbol": "TGTX",
+        "quantity": 137.0,
+        "start_price": 36.7,
+        "date": "24/06/2025",
+        "action": "BUY"
+    },
+    "de1d57a606cd2e781f51fc6e53879c9645e03da2d195fb4b26c7330321f5fcce": {
+        "symbol": "COIN",
+        "quantity": 16.0,
+        "end_price": 332.2,
+        "date": "24/06/2025",
+        "action": "SELL"
+    },
+    "24877c30e0aad06deae8c73bf771a662fb0ac5d790beabb85353ac6a7bf2cfb4": {
+        "symbol": "VST",
+        "quantity": 37.0,
+        "end_price": 187.22,
+        "date": "24/06/2025",
+        "action": "SELL"
+    },
+    "0e234d56a30fcd8b6eb8c5e3f4ed0175863a56c3e0eddecadff4f7076891f579": {
+        "symbol": "COST",
+        "quantity": 5.0,
+        "start_price": 996.7,
+        "date": "24/06/2025",
+        "action": "BUY"
+    },
+    "c976e4e807114b389db358b0cdd731829caa3bce48ad5458299efc0fbb46260b": {
+        "symbol": "MSTR",
+        "quantity": 5.0,
+        "start_price": 373.27,
+        "date": "24/06/2025",
+        "action": "BUY"
+    },
+    "a5e44c7bd2ee1b4fe823b63731eb689b5962dea70070054cdb80f5edd2e59078": {
+        "symbol": "META",
+        "quantity": 10.0,
+        "end_price": 746.2,
         "date": "30/06/2025",
         "action": "SELL"
     },
-    "54aa3d5436c83170138fe6be1dd82c9fac46f7f9034eba413f4911f0c9141f42": {
-        "symbol": "ACHR",
-        "quantity": 390.0,
-        "start_price": 10.36,
-        "date": "16/06/2025",
+    "318825e8619411294aed45bcb5cb229e68df8937bc1f293685fde9afef05a9b2": {
+        "symbol": "GOOGL",
+        "quantity": 14.0,
+        "start_price": 177.08,
+        "date": "30/06/2025",
         "action": "BUY"
     },
-    "ab4512fdb817f3b05021b7a44269ef4d78f416d56980bfef42fded2323bc3939": {
-        "symbol": "UBER",
-        "quantity": 15.0,
-        "end_price": 83.97,
-        "date": "13/06/2025",
+    "81d21d61d22584642e8f22bbf2df18dec35076b2cc09d17a8b1561b52b35f838": {
+        "symbol": "WMT",
+        "quantity": 50.0,
+        "start_price": 96.76,
+        "date": "30/06/2025",
+        "action": "BUY"
+    },
+    "b454fb04fe173733f7921250ab855f38b0c22cf36c3a8c2f01c12e5590b7d9af": {
+        "symbol": "TSLA",
+        "quantity": 9.0,
+        "start_price": 315.85,
+        "date": "03/07/2025",
+        "action": "BUY"
+    },
+    "526a8f92c64859722dfbb7078cbf444712b32714c1436f541d2dde7ab4322d1e": {
+        "symbol": "IGV",
+        "quantity": 28.0,
+        "end_price": 110.47,
+        "date": "03/07/2025",
         "action": "SELL"
-    },
-    "3d626a49be0d4d6dde9ce9662c50f597595d6f9023b6ffd251f41941d0e71ed2": {
-        "symbol": "GOOG",
-        "quantity": 16.0,
-        "end_price": 180.47,
-        "date": "11/06/2025",
-        "action": "SELL"
-    },
-    "71c78d268c4c20b3710e061b521cf7757dba39b9b1c8aa1045f87292cb6bfa63": {
-        "symbol": "UBER",
-        "quantity": 15.0,
-        "start_price": 83.83,
-        "date": "05/06/2025",
-        "action": "BUY"
-    },
-    "afcca4367a18c4323d4f957ccd098eb84ebee57f7624ba49b020152f65b10dfd": {
-        "dollars": 4208.16,
-        "shekels": 15000,
-        "action": "INVEST",
-        "date": "28/05/2025"
-    },
-    "09e9006533da59da4e16225bd7cc8b62464f4a2835423b294aca911e3557cc55": {
-        "symbol": "GOOG",
-        "quantity": 16.0,
-        "start_price": 173.68,
-        "date": "27/05/2025",
-        "action": "BUY"
     }
 }

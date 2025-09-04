@@ -1,13 +1,13 @@
 import pandas as pd
 import json
 import math
-from funcs_utils import hash_creator
+from funcs_utils import hash_creator,get_usd_ils_rate
 
 
 
 
 def reading_excel():
-    df = pd.read_excel("data.xlsx", engine="openpyxl")
+    df = pd.read_excel("daniel_data.xlsx", engine="openpyxl")
     stocks_data = {}
     temp_price = 0 
     temp_price_shekels = 0
@@ -28,6 +28,18 @@ def reading_excel():
             hash_key_sell = hash_creator(f'{row.iloc[3]}+{row.iloc[4]}+{row.iloc[5]}+{row.iloc[0]}+sell')
             temp_dict_sell = {"symbol": row.iloc[3], "quantity": row.iloc[4], "end_price": row.iloc[5], "date":row.iloc[0],"action":"SELL"}
             stocks_data[hash_key_sell] = temp_dict_sell
+        if "הפקדה" == action and row.iloc[2] != "מס עתידי" and row.iloc[2] != "מגן מס": 
+            dates_rates = {}
+            hash_key_transfer = hash_creator(f'{row.iloc[3]}+{row.iloc[4]}+{row.iloc[5]}+{row.iloc[0]}+buy')
+            hash_key_transfer_invest = hash_creator(f'{row.iloc[3]}+{row.iloc[4]}+{row.iloc[5]}+{row.iloc[0]}+invset')
+            start_price = row.iloc[5]
+            temp_price = temp_price + (row.iloc[5] * row.iloc[4])
+            if (row.iloc[0] not in dates_rates.keys()):
+                dates_rates[row.iloc[0]] = get_usd_ils_rate(row.iloc[0])
+            temp_price_shekels = temp_price_shekels + (row.iloc[5] * row.iloc[4] * dates_rates[row.iloc[0]])
+            temp_dict_sell = {"symbol": row.iloc[3], "quantity": row.iloc[4], "start_price": start_price, "date":row.iloc[0],"action":"BUY"}
+            stocks_data[hash_key_transfer_invest] =  {"dollars" : temp_price , "shekels" : temp_price_shekels, "action":"INVEST" ,"date":row.iloc[0]}
+            stocks_data[hash_key_transfer] = temp_dict_sell
             
         
 

@@ -1,5 +1,4 @@
-./conf.yaml
-./__pychache__/*
-./__pychache__
-./.venv/*
-
+conf.yaml
+__pycache__/
+.venv/
+eilah.py

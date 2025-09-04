@@ -24,6 +24,7 @@ TAXES = 'TAXES'
 TAX_PER_TRANSACTION = 'TAX_PER_TRANSACTION'
 TAX_TRANSACTION = 'tax_transaction'
 TYPE = 'type'
+RATES = 'RATES'
 
 
 
@@ -31,24 +32,9 @@ TYPE = 'type'
 
 
 # ------------------------------------------
-PIPLINE_SUM_INVEST = [
-    {"$sort": {"id": 1, "timestamp": -1}},
-
-    {
-        "$group": {
-            "_id": "$id",
-            "invest_dollars": {"$first": "$dollars_invest"},
-            "invest_shekels": {"$first": "$shekels_invest"},
-        }
-    },
-
-    {
-        "$group": {
-            "_id": None,
-            "totalDollarsInvested": {"$sum": "$invest_dollars"},
-            "totalShekelInvested": {"$sum": "$invest_shekels"}
-        }
-    }
+PIPLINE_LAST_INVEST = [
+    {"$sort": {"date": -1}}, 
+    {"$limit": 1}
 ]
 
 

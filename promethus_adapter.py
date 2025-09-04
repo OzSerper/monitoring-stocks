@@ -1,6 +1,6 @@
 from mongo_connection import MongoConnection
 from utils import BUY, STOCK_BUY_PROCCESS_FILTER,STOCKS_BUY_PROCESS_MONGO_PROJECTION,START_PRICE,\
-    AVAILABLE_QUANTITY,INVEST,STOCKS_INVEST_MONGO_PROJECTION, PIPLINE_SUM_INVEST, TYPE,PIPLINE_SUM_PROFIT_PRCCOSSING_STOCKS,PIPLINE_SUM_TAXES_TRANSACTION_STOCKS,SELL
+    AVAILABLE_QUANTITY,INVEST,STOCKS_INVEST_MONGO_PROJECTION, PIPLINE_LAST_INVEST, TYPE,PIPLINE_SUM_PROFIT_PRCCOSSING_STOCKS,PIPLINE_SUM_TAXES_TRANSACTION_STOCKS,SELL
 from prometheus import current_stock_price, active_stock_quage,active_stock_quantity_quage, prometheus_set_gauge,\
                         invested_money_dollars_quage, invested_money_shekels_quage, active_static_profirt_by_proccessing_stocks,\
                             taxes_by_transactions_buy_sum,taxes_by_transactions_sell_sum
@@ -8,9 +8,10 @@ from tracking_stocks import track_stock
 import time 
 
 def static_data_metrics(mongo: MongoConnection):
-    invested_money = mongo.get_by_aggregation(collection=mongo.get_collection(f'stocks_{INVEST}'),pipeline=PIPLINE_SUM_INVEST)
-    invested_dollars = invested_money[0]["totalDollarsInvested"]
-    invested_shekels = invested_money[0]["totalShekelInvested"]
+    invested_money = mongo.get_by_aggregation(collection=mongo.get_collection(f'stocks_{INVEST}'),pipeline=PIPLINE_LAST_INVEST)
+    print(list(invested_money))
+    invested_dollars = invested_money[0]["dollars_invest"]
+    invested_shekels = invested_money[0]["shekels_invest"]
     profit_by_proccessing_stocks = mongo.get_by_aggregation(collection=mongo.get_collection(f'stocks_{BUY}'),pipeline=PIPLINE_SUM_PROFIT_PRCCOSSING_STOCKS)
     profit_by_proccessing_stocks_value = profit_by_proccessing_stocks[0]['totalProfitActive']
     collection = mongo.get_collection(f'stocks_{BUY}')
@@ -36,10 +37,9 @@ def stocks_live_metrics(mongo: MongoConnection):
         prometheus_set_gauge(gauge_to_set=active_stock_quantity_quage, data=active_stock, target_value=active_stock[AVAILABLE_QUANTITY])
 
     while True:
-       time.sleep(60)
+       time.sleep(300)
        for active_stock_symbol in active_stocks:
             price_of_stock = track_stock(active_stock_symbol["symbol"])['price']
-            print(price_of_stock)
-            prometheus_set_gauge(gauge_to_set=current_stock_price, data=active_stock, target_value=price_of_stock)
+            prometheus_set_gauge(gauge_to_set=current_stock_price, data=active_stock_symbol, target_value=price_of_stock)
 
 

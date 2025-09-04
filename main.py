@@ -23,15 +23,14 @@ def file_opener(file):
 
 def active_stokcs(stocks_json,epoch_stock):
     epoch_flag = False
-    print(list(stocks_json.keys()))
     if not epoch_stock:
         return stocks_json
     else:
-        for stock in reversed(list(stocks_json.keys())):
+        for stock in (list(stocks_json.keys())):
             if stock == epoch_stock[ID]:
                 epoch_flag = True
                 stocks_json.pop(stock)
-            if not epoch_flag :
+            if  not epoch_flag :
                  stocks_json.pop(stock)
         print(stocks_json)
         return stocks_json
@@ -43,39 +42,27 @@ if __name__ == '__main__':
     stocks_json = file_opener("data.json")
     epoch_stock = mongo.get_epoch(mongo.get_collection("stocks_EPOCH"))
     active_stocks_actions = active_stokcs(stocks_json=stocks_json,epoch_stock=epoch_stock)
-    static_data_metrics(mongo)
-    for stock_id in reversed(list(active_stocks_actions.keys())):
+    for stock_id in (list(active_stocks_actions.keys())):
         stock = active_stocks_actions[stock_id]
         if stock[ACTION] == SELL:
             stock_sell_manager(jinja_stractures_conf,stock, mongo,stock_id)
         else:
             stock_non_sell_manager(jinja_stractures_conf=jinja_stractures_conf,mongo_client= mongo,stock= stock,stock_id=stock_id)
     try:
-        last_action_id = list(reversed(list(active_stocks_actions.keys())))[-1]
+        last_action_id = list((list(active_stocks_actions.keys())))[-1]
         last_action = active_stocks_actions[last_action_id]
         last_action = mongo.get_by_filter(collection=mongo.get_collection(f"stocks_{last_action[ACTION]}"),filters={ID:last_action_id})
         epoche_updater(last_action,jinja_stractures_conf,epoch_stock,mongo)
     except IndexError as e:
         pass
+    static_data_metrics(mongo)
+
     prometheus_runner()
     print("Prometheus metrics available on http://localhost:8000/metrics")
     server_thread = threading.Thread(target=run_server)
     server_thread.start()
     stocks_live_metrics(mongo=mongo)
     
-
-    #prometheus_set_gauge(gauge_to_set=active_stock_quage, data={'symbol':'oz','date':'27/5/2025','quantity':4,'start_price':155}, target_value=155)
-    #prometheus_set_gauge(gauge_to_set=current_stock_price, data={'symbol':'oz','date':'27/5/2025','quantity':4,'start_price':155}, target_value=200)
-
-
-
-
-
-    
-
-        #prometheus_set_gauge(gauge_to_set=stock_price_start, data=stocks_json[stock], target_value=stocks_json[stock]['start_price'])
-        #prometheus_set_gauge(gauge_to_set=stock_quantity, data=stocks_json[stock], target_value=stocks_json[stock]['quantity'])
-
 ''' 
     
     
