@@ -1,10 +1,12 @@
 from mongo_connection import MongoConnection
 from utils import BUY, STOCK_BUY_PROCCESS_FILTER,STOCKS_BUY_PROCESS_MONGO_PROJECTION,START_PRICE,\
-    AVAILABLE_QUANTITY,INVEST,STOCKS_INVEST_MONGO_PROJECTION, PIPLINE_LAST_INVEST, TYPE,PIPLINE_SUM_PROFIT_PRCCOSSING_STOCKS,PIPLINE_SUM_TAXES_TRANSACTION_STOCKS,SELL
+    AVAILABLE_QUANTITY,INVEST,STOCKS_INVEST_MONGO_PROJECTION, PIPLINE_LAST_INVEST, TYPE,PIPLINE_SUM_PROFIT_PRCCOSSING_STOCKS,PIPLINE_SUM_TAXES_TRANSACTION_STOCKS,SELL,\
+    ACTIVE_STOCK_INTERVAL_RETRIVER
 from prometheus import current_stock_price, active_stock_quage,active_stock_quantity_quage, prometheus_set_gauge,\
                         invested_money_dollars_quage, invested_money_shekels_quage, active_static_profirt_by_proccessing_stocks,\
                             taxes_by_transactions_buy_sum,taxes_by_transactions_sell_sum
 from tracking_stocks import track_stock
+from conf_loader import rates_conf
 import time 
 
 def static_data_metrics(mongo: MongoConnection):
@@ -37,7 +39,7 @@ def stocks_live_metrics(mongo: MongoConnection):
         prometheus_set_gauge(gauge_to_set=active_stock_quantity_quage, data=active_stock, target_value=active_stock[AVAILABLE_QUANTITY])
 
     while True:
-       time.sleep(300)
+       time.sleep(rates_conf[ACTIVE_STOCK_INTERVAL_RETRIVER])
        for active_stock_symbol in active_stocks:
             price_of_stock = track_stock(active_stock_symbol["symbol"])['price']
             prometheus_set_gauge(gauge_to_set=current_stock_price, data=active_stock_symbol, target_value=price_of_stock)

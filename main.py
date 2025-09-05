@@ -63,15 +63,5 @@ if __name__ == '__main__':
     server_thread.start()
     stocks_live_metrics(mongo=mongo)
     
-''' 
-    
-    
-    while True:
-        time.sleep(100)
-        for stock in stocks_json.keys():
-            price_of_stock = track_stock(stock)['price']
-            prometheus_set_gauge(gauge_to_set=stock_price, data=stocks_json[stock], target_value=price_of_stock)
-            print (f"finished ---- {stock} - {price_of_stock}")
 
-'''
     
